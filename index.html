@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+    <!-- app header start -->
     <header class="navbar navbar-fixed-top ins-one">
         <div class="container">
             <div class="navbar-inner">
@@ -22,7 +22,9 @@
             </div>
         </div>
     </header>
+    <!-- app header end -->
 
+    <!-- app body start -->
     <div class="container-xl">
 
         <div class="upload">
@@ -95,7 +97,7 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- app modal start -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -104,13 +106,18 @@
                         <p> Update available font groups </p>
         
                         <form id="groupForm" enctype="multipart/form-data">
-                        
-                            <div class="modal-new-row"></div>
-                        
-                            <div class="modal-group-action-btn">
-                                <button type="button" class="btn-btn" id="modal-new-row">+ Add Row</button>
-                                <button type="button" id="submit" class="btn-btn">Create</button>
+                            <div class="modal-input-select">
+                                <div class="modal-new-row"></div>
+                                <div class="modal-group-action-btn" style="position: absolute; bottom: -50px;">
+                                    <button type="button" class="btn-btn me-3" id="modal-new-row-id">+ Add Row</button>
+                                    <button type="button" id="groupUpdate" class="btn-btn">Update</button>
+                                </div>
                             </div>
+                            <!-- <div class="modal-group-action-btn">
+                                <button type="button" class="btn-btn" id="modal-new-row-id">+ Add Row</button>
+                                <button type="button" id="groupUpdate" class="btn-btn">Update</button>
+                            </div> -->
+                       
                         </form> 
                     </div>
                     <div class="modal-footer">
@@ -119,13 +126,13 @@
                 </div>
             </div>
         </div>
+        <!-- app modal end -->
 
-
+        <!-- app font group list start -->
         <div class="card mb-5">
             <div class="card-body">
                 <h5 class="card-title"> Our Font Groups </h5>
                 <p> List of all available font groups </p>
-
                 <table class="table group-table">
                     <thead>
                         <tr>
@@ -135,16 +142,22 @@
                             <th scope="col"></th>
                         </tr>
                     </thead>
-                    <tbody id="fontGroupBody">
-                       
-                    </tbody>
+                    <tbody id="fontGroupBody"></tbody>
                 </table>
-
             </div>
         </div>
-
+        <!-- app font group list end -->
     </div>
-<!-- <a href="javascript:void(0)"> edit </a> -->
+    <!-- app body end -->
+     
+    <footer>
+        <div class="container-xl py-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <p>Copyright © 2024 Zepto. All rights reserved.</p>
+                <p>Develop By Roky Hossain</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>

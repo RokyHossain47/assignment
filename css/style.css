@@ -49,7 +49,7 @@
 input, select {
     padding: 10px 15px !important;
 }
-.delete-btn, .edit-btn {
+.delete-btn, .edit-btn, .font-delete-btn {
     background: none;
     border: 0;
 }

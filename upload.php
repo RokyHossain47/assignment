@@ -11,6 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Get file information
     $file = $_FILES['file'];
+    if(!isset($file)){
+        echo "File not Exist";
+        exit;
+    }
     $fileName = basename($file['name']);
     $fileTmpPath = $file['tmp_name'];
     $fileType = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
