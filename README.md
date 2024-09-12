@@ -12,4 +12,5 @@
 <h5>Node:</h5>
 <ul>
     <li>.ttf file must be renamed to match their font family names as defined in the CSS file.</li>
+    <li>I have already provided some .ttf files in the fonts folder.</li>
 </ul>
